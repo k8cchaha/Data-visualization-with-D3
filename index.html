@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data visualization</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="./d3.min.js"></script>
+    <script src="./d3tip.js"></script>
+</head>
+
+<body>
+    <h1>Data visualization with D3.js</h1>
+    <label>Graph Settings</label>
+    <div class="setting-panel">
+        <div class="panel-left">
+            <div>
+                <span>Graph Type: </span>
+                <select id="selGraphType">
+                    <option value="bar">Bar Chart</option>
+                    <option value="line">Line Chart</option>
+                    <option value="pie">Pie Chart</option>
+                </select>
+            </div>
+            <div>
+                <span>Object Num: </span>
+                <select id="selObjectNum">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <span>Scection Num: </span>
+                <select id="selSectionNum">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+        </div>
+        <div class="panel-right">
+        	<div>
+                <button type="button" id="btnRandomAll">Random all</button>
+            </div>
+            <div>
+                <button type="button" id="btnRandomData">Random data</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="graphDisplay"></div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+    	MYAPP.run();
+    </script>
+</body>
+
+</html>
